@@ -49,5 +49,3 @@ Lucas de Souza
 Vitoria de Oliveira
 Amanda Silva
 Bruno Silva
-
-Desenvolvido por Seu Nome.
