@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Cursos Python</title>
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-image:linear-gradient(to bottom,rgb(58, 106, 240), rgb(33, 81, 214) );
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    margin:2.5%;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+.menu a:hover{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+
+}
+.first{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+}
+.background-section video{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 30%;
+    filter: grayscale(0);
+    z-index: 0;
+}
+
+.divisao{
+    width: 100%;
+    height: 2.5px;
+    background-image:linear-gradient(to left,rgb(255, 255, 255), black );
+}
+.text-first{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, black , transparent);
+    position: absolute;
+}
+.text-first h1{
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 7px;
+    right: 35%;
+    top: 10%;
+}
+.text-first ul{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    list-style: none;
+    left: 20%;
+    bottom: 20%;
+}
+.text-first li{
+    margin-right: 5%;
+}
+.text-first button{
+    background-color:rgb(58, 106, 240) ;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid rgb(58, 106, 240);
+    opacity: 85%;
+}
+.text-first button:hover{
+    background-color:rgb(58, 106, 240) ;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid rgb(6, 6, 172);
+    opacity: 100%;
+}
+.text-first a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.banner1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.background-section img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%;
+    filter: grayscale(100);
+    z-index: 0;
+}
+.background-section img:hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 70%;
+    filter: grayscale(0);
+    z-index: 0;
+}
+.txt-banner1 {
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    z-index: 1;
+    
+}
+.txt-banner1 h1{
+    position: absolute;
+    left: 60%;
+    top: 20%;
+ } 
+ .txt-banner1 p{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+ } 
+ .txt-banner1 button{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 20%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+ } 
+ .txt-banner1 button:hover{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 30%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    opacity: 75%;
+
+ } 
+ .txt-banner1 a{
+    text-decoration: none;
+    color: rgb(6, 6, 172);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ .txt-banner1 a:hover{
+    text-decoration: none;
+    color: rgb(9, 9, 242);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    z-index: 1;
+ }
+ .txt-trilha1{
+    padding-left: 55%;
+    padding-top: 4%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.txt-trilha2{
+    padding-left: 7.5%;
+    padding-top: 10%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.txt-trilha3{
+    padding-top:10%;
+    padding-left: 55%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.img-trilha1 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    right: 51%;
+    top: 90%;
+    opacity: 50%;
+}
+.img-trilha2 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    left: 51%;
+    top: 150%;
+    opacity: 50%;
+}
+.img-trilha3 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 225%;
+    right: 51%;
+    opacity: 50%;
+}
+.aprendizado button{
+    width: 250px;
+    height: 100px;
+    border: 1px solid rgb(58, 106, 240);
+    background-color: rgb(58, 106, 240);
+    border-radius: 10px;
+}
+.aprendizado button:hover{
+    width: 350px;
+    height: 100px;
+    border: 1px solid rgb(58, 106, 240);
+    background-color: rgb(58, 106, 240);
+    border-radius: 10px;
+}
+.aprendizado a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+.aprendizado{
+    height: 1500px;
+    width: 100%;
+    background-color: rgb(0, 0, 1);
+}
+.aprendizado h1{
+    color: rgb(58, 106, 240);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(58, 106, 240); /* Cor do link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Efeito hover */
+}
+#especial video{
+    height: 400px;
+    opacity: 10%;
+}
+.course-container{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+.c1{
+    position: absolute;
+    color: aliceblue;
+    z-index: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+.c1 h1{
+    color:rgb(58, 106, 240) ;
+}
+.videos{
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+}
+.videos ul{
+    padding-top: 10%;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+.videos li{
+    margin: 10px;
+}
+#especial2 video{
+    width: 100%;
+    height: 1200px;
+    opacity: 10%;
+}
+.name{
+    position: absolute;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    right: 30%;
+    top: 20%;
+}
+.card-body{
+    border: 1px solid transparent;
+}
+.card-body:hover{
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+    <header><nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">開発 kaihatsu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./promocaos.html">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./planos.html">Planos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./datascience.html">Python</a></li>
+                            <li><a class="dropdown-item" href="./mobile.html">Mobile</a></li>
+                            <li><a class="dropdown-item" href="./uxui.html">UX/UI</a></li>
+                            <li><a class="dropdown-item" href="ia.html">Inteligência Artificial</a></li>
+                            <li>
+                                <a class="dropdown-item" href="front.html"
+                                  >Front-end
+                                  </a
+                                >
+                              </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+    <div class="menu">
+        <ul>
+            <li><a href="introducao.html">INTRODUÇÃO</a></li>
+            <li><a href="web.html">WEB</a></li>
+            <li><a href="dados.html">DADOS</a></li>
+            <li><a href="automacao.html">AUTOMAÇÃO</a></li>
+            <li><a href="index.html">CURSOS</a></li>
+        </ul>
+    </div>
+    <div class="first">
+        <div class="background-section">
+        <video src="img/7020022_Brain_Science_1280x720.mp4" autoplay loop muted></video>
+    </div>
+    <div class="text-first">
+        <h1>CURSOS DE PYTHON</h1>
+        <ul>
+            <li><button><a href="introducao.html">Introdução ao Python</a></button></li>
+            <li><button><a href="web.html">Python para Web</a></button></li>
+            <li><button><a href="dados.html">Análise de Dados</a></button></li>
+            <li><button><a href="automacao.html">Python para Automação</a></button></li>
+        </ul>
+    </div>
+    </div>
+    <div class="divisao"></div>
+    <div class="aprendizado">
+        <div class="trilha">
+            <div class="img-trilha1">
+            <img src="img/programming-background-with-person-working-with-codes-computer (1).jpg" alt="">
+        </div>
+        <div class="txt-trilha1">
+            <h1>Primeiro Passo</h1>
+            <h2>Inscreva-se em nosso curso introdutório</h2>
+            <p>O primeiro passo é se inscrever no nosso curso de introdução ao Python. <br>
+                 Nele, abordamos os fundamentos essenciais da programação para iniciantes, <br>
+                  garantindo que você comece com uma base sólida na linguagem. <br></p>
+            <button><a href="">Ver mais</a></button>
+            </div>
+        </div>
+        <div class="trilha">
+            <div class="img-trilha2">
+            <img src="img/programming-background-with-person-working-with-codes-computer.jpg" alt="">
+        </div>
+        <div class="txt-trilha2">
+            <h1>Segundo Passo</h1>
+            <h2>Complete exercícios práticos</h2>
+            <p>Praticar é essencial! Em nosso curso, <br>
+                você encontrará exercícios e desafios práticos em cada módulo. <br>
+                 Esses exercícios ajudam a consolidar o que foi aprendido <br>
+                  e desenvolver suas habilidades ao longo do curso.<br></p>
+            <button><a href="">Ver mais</a></button>
+            </div>
+        </div>
+        <div class="trilha">
+            <div class="img-trilha3">
+            <img src="img/anthropomorphic-robot-performing-regular-human-job-future.jpg" alt="">
+        </div>
+        <div class="txt-trilha3">
+            <h1>Terceiro Passo</h1>
+            <h2>Participe da nossa comunidade de aprendizado</h2>
+            <p>Ao final de cada módulo, você pode compartilhar suas dúvidas <br>
+                 e conquistas com outros alunos. A comunidade está aqui para ajudar, <br>
+                  trocar experiências e incentivar você a seguir progredindo no mundo <br>
+                   da programação com Python.<br></p>
+            <button><a href="">Ver mais</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="divisao"></div>
+    <div class="banner1">
+        <div class="background-section">
+            <img src="img/cyberpunk-woman-warrior-portrait.jpg" alt="">
+        </div>
+        <div class="txt-banner1">
+            <h1>Introdução ao Python</h1>
+            <p>Pensada para iniciantes, com foco em conceitos básicos, <br>
+               sintaxe, e primeiros passos na programação.</p>
+            <button><a href="introducao.html">Ver curso</a></button>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="background-section"id="especial">
+            <video src="img/technology background 1.mp4" autoplay loop muted></video>
+        </div>
+        <div class="c1">
+        <h1>Introdução ao Python</h1>
+        <h2>Para quem está começando do zero</h2>
+        <p>Este curso é ideal para iniciantes, abordando desde os fundamentos da linguagem Python até estruturas básicas de programação. <br> Os alunos aprenderão a lógica por trás de variáveis, loops,<br>
+             condicionais e funções, com exercícios práticos para fixação. Perfeito para quem quer dar os primeiros passos na programação de forma simples e didática.</p>
+    </div>
+</div>
+    <div class="divisao"></div>
+    <div class="banner1">
+        <div class="background-section">
+            <img src="img/programming-background-concept.jpg" alt="">
+        </div>
+        <div class="txt-banner1">
+            <h1>Python para Web </h1>
+            <p>Voltada para quem quer criar aplicações web com Python. <br>
+                Pode incluir módulos com Django, Flask <br>
+                e até uma introdução ao desenvolvimento front-end.<br></p>
+            <button><a href="web.html">Ver curso</a></button>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="background-section"id="especial">
+            <video src="img/technology background 1.mp4" autoplay loop muted></video>
+        </div>
+        <div class="c1">
+        <h1>Python para Web (Django e Flask)</h1>
+        <h2>Desenvolvimento de Aplicações Web</h2>
+        <p>Voltado para quem quer explorar o poder do Python no desenvolvimento web. Com este curso, os alunos aprenderão a criar sites dinâmicos e APIs usando Django e Flask, <br>
+             dois dos frameworks mais populares para web. Além disso, abordamos o básico de HTML, CSS e JavaScript para entender o funcionamento completo de uma aplicação web.</p>
+    </div>
+</div>
+    <div class="divisao"></div>
+    <div class="banner1">
+        <div class="background-section">
+            <img src="img/man-analysing-binary-code-virtual-screen.jpg" alt="">
+        </div>
+        <div class="txt-banner1">
+            <h1>Análise de Dados <br>
+                com Python</h1>
+            <p>Focada em quem quer trabalhar com dados. <br>
+                Inclui bibliotecas como Pandas, Numpy e Matplotlib,<br>
+                 e até Machine Learning básico com Scikit-Learn.<br></p>
+            <button><a href="dados.html">Ver curso</a></button>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="background-section"id="especial">
+            <video src="img/technology background 1.mp4" autoplay loop muted></video>
+        </div>
+        <div class="c1">
+        <h1>Análise de Dados com Python</h1>
+        <h2>Transforme Dados em Informações Valiosas</h2>
+        <p>Perfeito para profissionais e entusiastas de análise de dados. Este curso explora as ferramentas e bibliotecas mais usadas, como Pandas, Numpy e Matplotlib,<br>
+             permitindo que o aluno manipule e visualize dados. Inclui introdução ao Machine Learning para quem deseja dar os primeiros passos na área de Data Science.</p>
+    </div>
+</div>
+    <div class="divisao"></div>
+    <div class="banner1">
+        <div class="background-section">
+            <img src="img/futuristic-scene-with-high-tech-robot-used-construction-industry.jpg" alt="">
+        </div>
+        <div class="txt-banner1">
+            <h1>Python para Automação            </h1>
+            <p>Módulo prático para aprender a automatizar tarefas repetitivas,<br>
+                 manipular arquivos, e usar bibliotecas <br>
+                  como Selenium para automação web. <br></p>
+            <button><a href="automacao.html">Ver curso</a></button>
+        </div>
+    </div>
+    <div class="course-container">
+        <div class="background-section" id="especial">
+            <video src="img/technology background 1.mp4" autoplay loop muted></video>
+        </div>
+        <div class="c1">
+        <h1>Python para Automação</h1>
+        <h2>Torne tarefas repetitivas mais rápidas e eficientes</h2>
+        <p>Ideal para quem quer otimizar tarefas e processos. Aprenda a automatizar rotinas de escritório, como manipulação de arquivos e dados, <br>
+           uso de APIs e automação de navegador com Selenium. A aplicação de automações no trabalho pode aumentar a produtividade e economizar tempo.</p>
+    </div>
+</div>
+    <div class="divisao"></div>
+    <div class="final">
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+</body>
+</html>

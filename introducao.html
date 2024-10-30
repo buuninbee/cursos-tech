@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Cursos Python</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-image:linear-gradient(to bottom,rgb(58, 106, 240), rgb(33, 81, 214) );
+
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu li{
+    margin:2.5%;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+.menu a:hover{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+
+}
+.first{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+
+}
+.background-section video{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 30%;
+    filter: grayscale(0);
+    z-index: 0;
+}
+
+.divisao{
+    width: 100%;
+    height: 2.5px;
+    background-image:linear-gradient(to left,rgb(255, 255, 255), black );
+}
+.text-first{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, black , transparent);
+    position: absolute;
+}
+.text-first h1{
+    position: absolute;
+    z-index: 1;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 7px;
+    right: 35%;
+    top: 10%;
+}
+.text-first ul{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    list-style: none;
+    left: 20%;
+    bottom: 20%;
+}
+.text-first li{
+    margin-right: 5%;
+}
+.text-first button{
+    background-color:rgb(58, 106, 240) ;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid rgb(58, 106, 240);
+    opacity: 85%;
+}
+.text-first button:hover{
+    background-color:rgb(58, 106, 240) ;
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid rgb(6, 6, 172);
+    opacity: 100%;
+}
+.text-first a{
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.banner1{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.background-section img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 50%;
+    filter: grayscale(100);
+    z-index: 0;
+}
+.background-section img:hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    opacity: 70%;
+    filter: grayscale(0);
+    z-index: 0;
+}
+.txt-banner1 {
+    text-decoration: none;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    z-index: 1;
+    
+}
+.txt-banner1 h1{
+    position: absolute;
+    left: 60%;
+    top: 20%;
+ } 
+ .txt-banner1 p{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+ } 
+ .txt-banner1 button{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 20%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+
+ } 
+ .txt-banner1 button:hover{
+    position: absolute;
+    left: 60%;
+    top: 60%;
+    width: 30%;
+    height: 10%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    opacity: 75%;
+
+ } 
+ .txt-banner1 a{
+    text-decoration: none;
+    color: rgb(6, 6, 172);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    z-index: 1;
+ }
+ .txt-banner1 a:hover{
+    text-decoration: none;
+    color: rgb(9, 9, 242);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 5px;
+    z-index: 1;
+ }
+ .txt-trilha1{
+    padding-left: 55%;
+    padding-top: 4%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.txt-trilha2{
+    padding-left: 7.5%;
+    padding-top: 10%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.txt-trilha3{
+    padding-top:10%;
+    padding-left: 55%;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.img-trilha1 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    right: 51%;
+    top: 90%;
+    opacity: 50%;
+}
+.img-trilha2 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    left: 51%;
+    top: 150%;
+    opacity: 50%;
+}
+.img-trilha3 img{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: 225%;
+    right: 51%;
+    opacity: 50%;
+}
+.aprendizado button{
+    width: 250px;
+    height: 100px;
+    border: 1px solid rgb(58, 106, 240);
+    background-color: rgb(58, 106, 240);
+    border-radius: 10px;
+}
+.aprendizado button:hover{
+    width: 350px;
+    height: 100px;
+    border: 1px solid rgb(58, 106, 240);
+    background-color: rgb(58, 106, 240);
+    border-radius: 10px;
+}
+.aprendizado a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+}
+.aprendizado{
+    height: 1500px;
+    width: 100%;
+    background-color: rgb(0, 0, 1);
+}
+.aprendizado h1{
+    color: rgb(58, 106, 240);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: rgb(58, 106, 240); /* Cor do link */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Efeito hover */
+}
+#especial video{
+    height: 400px;
+    opacity: 10%;
+}
+.course-container{
+    width: 100%;
+    height: 350px;
+    background-color: black;
+}
+.c1{
+    position: absolute;
+    color: aliceblue;
+    z-index: 1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    margin-left: 10%;
+
+}
+.c1 h1{
+    color:rgb(58, 106, 240) ;
+}
+.videos{
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+}
+.videos ul{
+    padding-top: 10%;
+    padding-left: 10%;
+    display: flex;
+
+}
+
+.videos li{
+    margin: 10px;
+}
+#especial2 video{
+    width: 100%;
+    height: 1200px;
+    opacity: 10%;
+}
+.name{
+    position: absolute;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+    right: 30%;
+    top: 20%;
+}
+.card-body{
+    border: 1px solid transparent;
+}
+.card-body:hover{
+    width: 200px;
+}
+    </style>
+</head>
+<body>
+  <div class="menu">
+    <ul>
+        <li><a href="introducao.html">INTRODUÇÃO</a></li>
+        <li><a href="web.html">WEB</a></li>
+        <li><a href="dados.html">DADOS</a></li>
+        <li><a href="automacao.html">AUTOMAÇÃO</a></li>
+        <li><a href="index.html">CURSOS</a></li>
+    </ul>
+</div>
+<div class="name">
+  <h1>Introdução ao Python</h1>
+</div>
+    <div class="videos">
+        <div class="background-section" id="especial2">
+            <video src="img/technology background 1.mp4" autoplay loop muted></video>
+        </div>
+        <ul>
+            <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 1</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=S9uPNppGsGo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 2</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=Mp0vhMDI7fA&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=3&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 3</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=VuKvR1J2LQE&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=4&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 4</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=31llNGKWDdo&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=5&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+        </ul>
+        <ul>
+            <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 5</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=nIHq1MtJaKs&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=7&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 6</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=FNqdV5Zb_5Q&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=8&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 7</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=PB254Cfjlyk&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=10&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+              <li><div class="card" style="width: 18rem;">
+                <img src="img/html-css-collage-concept-with-person.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Aula 8</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="https://www.youtube.com/watch?v=mqcNw_dhl8I&list=PLvE-ZAFRgX8hnECDn1v9HNTI71veL3oW0&index=14&pp=iAQB" class="btn btn-primary">Assistir</a>
+                </div>
+              </div></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
+    </footer>
+</body>
+</html>
